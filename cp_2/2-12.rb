@@ -62,3 +62,4 @@ require "date"
 
 #foo/hello.rbから見た相対パスでbar/byeを読み込む
 require_relative "../bar/bye"
+

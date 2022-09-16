@@ -29,3 +29,36 @@ puts m(c)
 #equal?メソッドを使って同じオブジェクトかどうか確認しても良い
 puts a.equal?(b)
 puts b.equal?(c)
+
+# b,cは同じオブジェクト、aは異なるオブジェクト
+a = "hello"
+b = "hello"
+c = b
+
+#渡された文字列を破壊的に大文字に変換するメソッドを定義する
+def m!(d)
+  d.upcase!
+end
+
+#cにm!メソッドを適用する
+m!(c)
+
+#b、cはいずれも大文字になる
+puts b
+puts c
+
+#aは別のオブジェクトなので大文字にならない
+puts a
+
+#requireとrequire_relative ライブラリを埋め込みたい時に使う構文↓
+#require ライブラリ名
+
+# Dateクラスは組み込めライブラリではないので、そのままでは使用できない
+# Date.today
+
+#dateライブラリを読み込むとDateクラスが使えるようになる
+require "date"
+ puts Date.today
+
+#foo/hello.rbから見た相対パスでbar/byeを読み込む
+require_relative "../bar/bye"

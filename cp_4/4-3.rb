@@ -52,7 +52,7 @@ puts a
 numbers = [1,2,3,4]
 sum = 0
 numbers.each do |n|
-  sum_value = n.even? ? n* 10 : n
+  sum_value = n.even? ? n* 10 : n　#ここの行の説明：？はif文　：はelseになってると考える。なので奇数の時は: nの方に値が
   sum += sum_value
 end
 puts sum

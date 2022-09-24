@@ -124,3 +124,20 @@ puts ["apple","melon","orange"]
 puts %w!apple melon orange!
 
 puts %w(apple melon orange)
+
+# 文字列を配列に変換する
+# 文字列を分解して配列に変換することもできる。ここではcharsメソッドとsplitメソッドを紹介する。
+# charsメソッドは文字列中の１文字１文字を配列の要素に分解するメソッド
+puts 'Ruby'.chars
+# splitメソッドは引数で渡した区切り文字で文字列を配列に分解するメソッド。
+puts "Ruby,java,python".split(',')
+
+# 配列にデフォルト値を設定する
+# これまで配列は[]を使ってきたが、このほかにもArray .newを使って作成する方法がある。
+# 配列５を作成する
+a = Array.new(5)
+puts a
+
+# 要素が５つで０をデフォルト値とする配列を作成する
+a = Array.new(5,0)
+puts a

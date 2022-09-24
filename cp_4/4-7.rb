@@ -110,3 +110,17 @@ def greet(*names)
 end
 puts greet("田中さん")
 puts greet("田中さん、太田さん、佐藤さん")
+
+
+# ＝＝で等しい配列がどうかを判断する
+# 配列が等しい場合
+puts [1,2,3] == [1,2,3]
+# 等しくない場合
+puts [1,2,3] == [1,2,4]
+
+# ％記法で文字列の配列を簡潔に作る
+puts ["apple","melon","orange"]
+
+puts %w!apple melon orange!
+
+puts %w(apple melon orange)

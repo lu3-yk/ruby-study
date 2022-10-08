@@ -79,3 +79,5 @@ for n in numbers
   sum += n
 end
 puts sum
+
+# while文の反対で条件が義である間、処理を繰り返すuntil文もある

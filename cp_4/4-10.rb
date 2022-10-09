@@ -80,4 +80,15 @@ for n in numbers
 end
 puts sum
 
-# while文の反対で条件が義である間、処理を繰り返すuntil文もある
+#loopメソッド
+# あえて無限ループを作りたい、という場合はwhile文を使って次のようなコードが書ける
+# while true
+#   無限ループ用の処理
+# end
+# while true
+#   n = numbers.sample
+#   puts n
+#   break if n == 5
+# end
+
+

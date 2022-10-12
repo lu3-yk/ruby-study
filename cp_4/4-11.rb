@@ -49,4 +49,14 @@ end
 # catch タグ do
 #   繰り返し処理
 #   throw タグ
-# end  
+# end 
+
+# next
+# 繰り返し処理を途中で中断し、次の繰り返し処理に進める場合はnextを使う。以下は偶数であれば処理を中断して次の繰り返し処理に進むコード例。
+numbers = [1,2,3,4,5]
+numbers.each do |n|
+  # 偶数であれば中断して次の繰り返し処理に進む
+  next if n.even?
+  puts n
+end  
+
